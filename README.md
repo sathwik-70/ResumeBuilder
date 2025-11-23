@@ -5,39 +5,88 @@
 
 A feature-rich, modern web application designed to help users create ATS-friendly, visually stunning resumes. This project leverages React, TypeScript, and Tailwind CSS for a seamless user experience, integrated with Google's Gemini API for smart content enhancement.
 
-## ✨ Key Features
+## 🚀 Key Features
 
-### 🎨 Design & Customization
--   **30+ Professional Templates**: From "Executive" and "Classic" to "Creative" and "Techie", choose a design that fits your industry.
--   **Live Real-Time Preview**: Watch your resume transform instantly as you type.
--   **Drag & Drop Reordering**: Easily rearrange sections (Experience, Education, Skills, etc.) to prioritize your strongest assets.
--   **Smart Section Visibility**: Toggle sections on or off with a single click—perfect for tailoring resumes to specific job descriptions.
--   **Theme Support**: Fully functional Dark Mode and Light Mode for comfortable editing day or night.
+### 🧠 Advanced AI Integration
+At the heart of the application is **Google Gemini AI**, assisting users in writing compelling content:
+-   **Professional Summaries**: Generates impactful, role-specific professional summaries based on current trends.
+-   **Experience Enhancement**: Rewrites job descriptions into concise, achievement-oriented bullet points using the **STAR method** (Situation, Task, Action, Result).
+-   **Project Descriptions**: Transforms technical ramblings into clear, high-impact project showcases highlighting technical challenges and outcomes.
+-   **Skill Optimization**: Organizes and refines raw lists of skills into professional keywords.
 
-### 🤖 AI-Powered Enhancements
--   **Smart Summary Writer**: Generate impactful professional summaries based on your role.
--   **Bullet Point Refiner**: Turn basic task lists into achievement-oriented STAR method bullet points.
--   **Skill Organizer**: Instantly categorize and professionalize your list of skills.
--   **Project Description Improver**: Make your project descriptions concise and technical with one click.
+### 🎨 Extensive Template Library
+The application features **30+ handcrafted templates** designed for every stage of a career, from internships to executive roles.
 
-### 📱 Responsive & Accessible
--   **Mobile-First Design**: Edit your resume on the go with a fully responsive mobile interface featuring a slide-out sidebar and fixed navigation.
--   **Cross-Platform**: Works seamlessly on Desktop, Tablet, and Mobile devices.
+**Template Categories:**
+*   **Modern & Clean**: (*Modern, Crafter, Emerald, Slate*) - Perfect for corporate jobs, balancing white space with subtle colors.
+*   **ATS-Friendly**: (*Classic, Minimal, Typographic*) - Text-focused layouts optimized for Applicant Tracking Systems.
+*   **Creative & Vibrant**: (*Aurora, Voltaic, Spectrum, Vibrant*) - High-energy designs with bold gradients and colors for designers and marketers.
+*   **Professional & Dark**: (*Onyx, Midnight, Techie*) - Sleek dark-mode inspired themes ideal for developers and tech professionals.
+*   **Industry Specific**: (*Culinary, Care, Glazier*) - Tailored layouts for hospitality, healthcare, and medical fields.
 
-### 📤 Export & Privacy
--   **High-Quality PDF**: Download a pixel-perfect A4 PDF ready for printing or emailing.
--   **Local Storage**: Your data stays in your browser. No accounts, no servers—your privacy is paramount.
--   **Single Page Optimization**: Templates are optimized to fit content neatly onto A4 pages.
+### 👁️ Real-Time Responsive Preview
+*   **Instant Feedback**: The preview pane updates instantly as you type in the editor.
+*   **Responsive Scaling**: The A4 preview automatically scales to fit any screen size, from mobile phones to large desktop monitors, ensuring you always see the full layout.
+*   **Visual Fidelity**: What you see is exactly what you get in the PDF export.
+
+### 📱 Mobile-First Experience
+*   **Adaptive Layout**: On desktop, enjoy a split-screen view. On mobile, seamless tab switching between Editor and Preview.
+*   **Sidebar Navigation**: A collapsible sidebar allows for quick jumping between resume sections.
+*   **Touch-Optimized**: All buttons and inputs are sized for touch interaction.
+
+## 📝 Resume Data Sections
+
+The application collects comprehensive professional data to build a complete profile:
+
+1.  **Personal Information**:
+    *   Full Name, Job Title.
+    *   Contact details (Email, Phone, Location).
+    *   Social Links (LinkedIn, Website/Portfolio).
+    *   **Profile Photo**: Option to upload, crop, and display a professional headshot (supported by specific templates).
+    *   **Professional Summary**: AI-enhanced bio text.
+
+2.  **Professional Experience**:
+    *   Role/Title, Company Name.
+    *   Dates of Employment.
+    *   Location.
+    *   **Bullet Points**: Dynamic list support for job responsibilities, with individual AI enhancement for each point.
+
+3.  **Education**:
+    *   Degree/Qualification.
+    *   Institution/School.
+    *   Graduation Date & Location.
+
+4.  **Projects**:
+    *   Project Name & Link.
+    *   Tech Stack used.
+    *   Detailed Description (AI-enhanced).
+
+5.  **Skills**:
+    *   A flexible text area that parses soft and hard skills, formatted automatically by the chosen template.
+
+6.  **Additional Sections**:
+    *   **Certifications**: track professional licenses and certificates.
+    *   **Languages**: proficiency levels with visual bars in supported templates.
+    *   **Websites & Profiles**: Add unlimited external links (GitHub, Behance, etc.).
+
+## 📤 Export & Download
+
+The application includes a robust export engine powered by `html2pdf.js`:
+
+*   **Pixel-Perfect PDF**: Generates high-quality A4 PDFs (210mm x 297mm).
+*   **Single-Page Optimization**: The preview engine is tuned to help users fit content onto a single page, a standard preference for modern recruiters.
+*   **Custom Filenames**: Before downloading, a modal prompts the user to name their file (defaults to `[Name]_resume.pdf`), ensuring organized file management.
+*   **Client-Side Generation**: The PDF is generated entirely in the browser. No personal data is sent to a server for file creation.
 
 ## 🛠️ Tech Stack
 
--   **Frontend Framework**: [React 19](https://react.dev/)
--   **Language**: [TypeScript](https://www.typescriptlang.org/)
--   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
--   **AI Integration**: [Google Gemini API (@google/genai)](https://ai.google.dev/)
--   **PDF Generation**: [html2pdf.js](https://ekoopmans.github.io/html2pdf.js/)
--   **Icons**: Heroicons
--   **Build Tool**: Native ES Modules (No bundler required for dev)
+-   **Frontend Framework**: [React 19](https://react.dev/) - For a reactive, component-based UI.
+-   **Language**: [TypeScript](https://www.typescriptlang.org/) - For type safety and robust code.
+-   **Styling**: [Tailwind CSS](https://tailwindcss.com/) - For rapid, utility-first styling and responsive design.
+-   **AI Integration**: [Google Gemini API (@google/genai)](https://ai.google.dev/) - For generative text features.
+-   **PDF Generation**: [html2pdf.js](https://ekoopmans.github.io/html2pdf.js/) - For converting DOM elements to PDF.
+-   **Icons**: Heroicons - For a clean, consistent icon set.
+-   **State Management**: React Hooks (`useState`, `useEffect`, `useCallback`) & LocalStorage for persistence.
 
 ## 🚀 Getting Started
 
@@ -76,36 +125,15 @@ Since this project uses native ES modules, you cannot open `index.html` directly
 -   **VS Code**: Right-click `index.html` and select "Open with Live Server".
 -   **Terminal**: Run `npx http-server .` and open the provided localhost URL.
 
-## 📂 Project Structure
-
-```
-resume-builder/
-├── components/         # React UI Components
-│   ├── Editor.tsx      # Main form inputs and AI logic
-│   ├── Preview.tsx     # Resume rendering and PDF export
-│   ├── Sidebar.tsx     # Navigation and section management
-│   ├── TemplateSelector.tsx # Grid view for choosing designs
-│   └── ui/             # Reusable UI elements (Icons, etc.)
-├── hooks/              # Custom Hooks
-│   └── useResume.ts    # State management and LocalStorage logic
-├── services/           # External Services
-│   └── geminiService.ts# Google Gemini API integration
-├── App.tsx             # Main Layout
-├── constants.ts        # Initial data and configuration
-├── types.ts            # TypeScript Interfaces
-└── index.html          # Entry point
-```
-
 ## 👨‍💻 Developer Contact
 
 This project was crafted with ❤️ by **Sathwik Pamu**.
 
-If you have any questions, suggestions, or just want to connect, feel free to reach out!
+I am passionate about building scalable web applications and intuitive UI/UX experiences. If you have any questions, suggestions for new templates, or just want to connect, feel free to reach out!
 
 -   **Developer**: Sathwik Pamu
 -   **Role**: Full Stack Developer & UI/UX Enthusiast
--   **mail** : sathwikpamu@gmail.com
--   **Focus**: Building scalable web applications with modern technologies.
+-   **Focus**: React, TypeScript, Tailwind CSS, AI Integration.
 
 ---
-* Resume Builder. All Rights Reserved.*
+
