@@ -104,7 +104,8 @@ If you have any questions, suggestions, or just want to connect, feel free to re
 
 -   **Developer**: Sathwik Pamu
 -   **Role**: Full Stack Developer & UI/UX Enthusiast
+-   **mail** : sathwikpamu@gmail.com
 -   **Focus**: Building scalable web applications with modern technologies.
 
 ---
-*© 2024 Resume Builder. All Rights Reserved.*
+* Resume Builder. All Rights Reserved.*
