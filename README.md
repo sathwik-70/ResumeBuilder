@@ -1,6 +1,6 @@
 # 📄 Professional AI Resume Builder
 
-> **Architected and crafted with ❤️ by Sathwik Pamu**
+> **crafted with ❤️ by Sathwik Pamu**
 
 A production-grade, full-stack capable web application that empowers users to build ATS-friendly, visually stunning resumes in minutes. This project leverages the power of **React 19**, **TypeScript**, **Tailwind CSS**, and **Google Gemini AI** to provide a seamless, real-time resume editing experience.
 
@@ -208,4 +208,3 @@ This project was architected, designed, and developed by **Sathwik Pamu**.
 
 If you are interested in this project, have feature requests, or wish to collaborate on future endeavors, please reach out.
 
-*© 2024 Resume Builder. All Rights Reserved.*
