@@ -176,7 +176,7 @@ The application integrates with **Google Gemini 2.5 Flash** via the `@google/gen
 
 1.  **Clone**:
     ```bash
-    git clone https://github.com/your-username/resume-builder.git
+    git clone https://github.com/sathwik-70/resume-builder.git
     cd resume-builder
     ```
 
